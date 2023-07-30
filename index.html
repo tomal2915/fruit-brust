@@ -20,16 +20,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="">
+<body class="lg:px-8">
 
     <!-- navbar -->
     <nav class="navbar bg-[#F85559] flex items-center justify-between rounded-full my-12 px-12 py-4 ">
-        <div class=" hidden lg:flex">
+        <div class=" hidden lg:flex text-white">
             <ul class="menu menu-horizontal">
-                <li><a>Item 1</a></li>
-                <li><a>Item 2</a></li>
-                <li><a>Item 3</a></li>
-                <li><a>Item 4</a></li>
+                <li><a>Home</a></li>
+                <li><a>About us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
             </ul>
         </div>
 
@@ -47,10 +47,10 @@
                 <div>
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Item 1</a></li>
-                        <li><a>Item 2</a></li>
-                        <li><a>Item 3</a></li>
-                        <li><a>Item 4</a></li>
+                        <li><a>Home</a></li>
+                        <li><a>About us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
                     </ul>
                 </div>
             </div>
@@ -62,7 +62,7 @@
             </div>
         </div>
 
-        <div class=" hidden lg:block bg-[#FFF] flex items-center rounded-full">
+        <div class=" hidden lg:block bg-[#FFF] flex items-center rounded-full p-2">
             <div class="flex items-center px-4">
                 <input type="text" placeholder="Search here" class="w-full bg-transparent focus:outline-none">
                 <button class="">
@@ -74,13 +74,13 @@
 
     <!--  -->
     <main>
-        <section>
+        <section class="">
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="/images/banner1.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" class="btn btn-circle bg-[#121212] border-transparent">❮</a>
-                        <a href="#slide2" class="btn btn-circle bg-[#121212] border-transparent">❯</a>
+                        <a href="#slide4" class="btn btn-circle bg-[#121212] border-transparent text-white">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-[#121212] border-transparent text-white">❯</a>
                     </div>
                     <div class="absolute inset-x-[15%] hidden py-5 text-center text-white md:block">
                         <h5 class="text-7xl font-extrabold mt-20">Exotic tastes at your <br> doorstep</h5>
@@ -127,73 +127,68 @@
             </div>
         </section>
 
-        <section class="flex justify-center">
-            <div class="flex justify-between items-center relative -top-28 bg-white shadow-sm">
-                <div class="flex flex-col items-center">
+        <section class="hidden lg:block">
+            <div class="flex justify-between items-center relative -top-20 bg-white shadow-sm mx-60">
+                <div class="flex flex-col items-center p-8">
                     <img src="./images/fruit1.png" alt="">
                     <p>Strawberry</p>
                 </div>
-                <div class="flex flex-col items-center">
+                <div class="flex flex-col items-center p-8">
                     <img src="./images/fruit2.png" alt="">
                     <p>Orange</p>
                 </div>
-                <div class="flex flex-col items-center">
+                <div class="flex flex-col items-center p-8">
                     <img src="./images/fruit3.png" alt="">
                     <p>Mango</p>
                 </div>
-                <div class="flex flex-col items-center">
+                <div class="flex flex-col items-center p-8">
                     <img src="./images/fruit4.png" alt="">
                     <p>Strawberry</p>
                 </div>
-                <div class="flex flex-col items-center">
+                <div class="flex flex-col items-center p-8">
                     <img src="./images/fruit5.png" alt="">
                     <p>Mango</p>
                 </div>
             </div>
         </section>
 
-        <!--  -->
-        <section>
 
-            <body class="flex items-center justify-center">
-                <!-- First Layer -->
-                <div class="w-full">
-                    <!-- Second Layer -->
-                    <div id="new" class="flex justify-between">
-                        <h2 class="text-7xl text-center font-bold">Deal of the day</h2>
-                        <div
-                            class="flex justify-between text-center [&>*>h2]:text-xl [&>*>h2]:sm:text-4xl [&>*>h2]:font-bold [&>*>p]:text-sm [&>*>p]:font-semibold">
-                            <div>
-                                <h2 id="month">10</h2>
-                                <p>Month</p>
-                            </div>
+        <section class="flex flex-col gap-12">
+            <div class="flex justify-between gap-96">
+                <!--  -->
+            <div class="flex flex-col">
+                <h1>Deal of the day</h1>
+                <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
 
-                            <div>
-                                <h2 id="day">30</h2>
-                                <p>days</p>
-                            </div>
-
-                            <div>
-                                <h2 id="hour">20</h2>
-                                <p>Hours</p>
-                            </div>
-
-                            <div>
-                                <h2 id="minute">59</h2>
-                                <p>Minutes</p>
-                            </div>
-
-                            <div>
-                                <h2 id="second">40</h2>
-                                <p>Seconds</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <script src="index.js"></script>
-            </body>
             <!--  -->
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                <div class="flex flex-col">
+                    <span class="countdown font-mono text-5xl">
+                        <span style="--value:15;"></span>
+                    </span>
+                    Days
+                </div>
+                <div class="flex flex-col">
+                    <span class="countdown font-mono text-5xl">
+                        <span style="--value:10;"></span>
+                    </span>
+                    hours
+                </div>
+                <div class="flex flex-col">
+                    <span class="countdown font-mono text-5xl">
+                        <span style="--value:24;"></span>
+                    </span>
+                    min
+                </div>
+                <div class="flex flex-col">
+                    <span class="countdown font-mono text-5xl">
+                        <span style="--value:27;"></span>
+                    </span>
+                    sec
+                </div>
+            </div>
+            </div>
             <div>
 
                 <div class="card w-96 bg-base-100 shadow-xl">
