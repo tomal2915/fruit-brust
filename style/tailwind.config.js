@@ -1,6 +1,10 @@
 tailwind.config = {
     theme: {
-      darkMode: false,
+      extend: {
+        colors: {
+          clifford: '#da373d',
+        }
+      }
     }
   }
 
