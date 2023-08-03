@@ -5,7 +5,6 @@ tailwind.config = {
           clifford: '#da373d',
         }
       }
-    }
+    },
+    darkMode: false,
   }
-
-  
